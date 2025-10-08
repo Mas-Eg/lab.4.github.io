@@ -2,7 +2,29 @@
     margin: 0;
     font-family: 'Calisto MT', cursive;
 }
-
+#main-aside-wrapper {
+ display: flex;
+ flex-direction: column;
+}
+#main-aside-wrapper main, #mainaside-wrapper aside {
+ background-color: #ddd;
+ margin: 10px;
+ padding: 10px;
+}
+#main-aside-wrapper aside {
+ flex: 1;
+ order: 1;
+}
+#main-aside-wrapper main {
+ flex: 3;
+ order: 2;
+}
+@media screen and (min-width:
+800px) {
+ #main-aside-wrapper {
+ flex-direction: row;
+ }
+}
 body{
     background-image: url(https://i.pinimg.com/originals/c2/9a/87/c29a8738f8c1e2a044c51b08fff783cd.jpg);
     background-repeat: repeat;
@@ -75,6 +97,7 @@ footer{
     float: left;
     background: grey;
 }
+
 
 
 
